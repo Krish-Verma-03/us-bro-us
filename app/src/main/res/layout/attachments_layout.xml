@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilergggfile"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@drawable/photocamera" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardforattachments"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_toLeftOf="@id/profilergggfile"
+        android:padding="@dimen/_7sdp"
+        app:cardBackgroundColor="#a1e6ff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="26dp"
+                android:background="@drawable/docs"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/filename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:layout_toLeftOf="@id/profilerggg"
+                android:fontFamily="@font/spartan_regular"
+                android:padding="@dimen/_7sdp"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/filenameurl"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

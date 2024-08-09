@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="335dp"
+    android:layout_height="240dp"
+    android:orientation="vertical"
+    android:layout_margin="13dp"
+    android:layout_gravity="center"
+    android:background="@drawable/shapedialog">
+
+    <ImageView
+        android:id="@+id/binicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="13dp"
+        android:src="@drawable/bin_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to \n delete this message?"
+        android:textSize="19dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="@dimen/_8sdp"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nobntfordel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="No"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/yesbntfordel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Yes"
+            android:backgroundTint="@color/black"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
